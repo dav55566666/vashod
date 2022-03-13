@@ -1,0 +1,71 @@
+a,
+button,
+input {
+    outline: 0;
+}
+body,
+ul {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    font-size: 16px;
+    position: relative;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+a,
+button {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    background: unset;
+    border: unset;
+}
+a,
+button,
+ul {
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+.big_Container {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+@media (max-width: 600px) {
+    input,
+    select,
+    textarea {
+        font-size: 16px !important;
+    }
+}
+.page{
+    background: #EDF2FF;
+    border-radius: 0px;
+    padding: 36px 30px 30px 118px;
+    min-height: 100vh
+}
+// @import "../uikit/token/styles";
+@import "../uikit/fonts/styles";
+@import "../uikit/nav/styles";
+@import "../uikit/pagetitle/styles";
+@import "../uikit/back/styles";
+@import "../uikit/button/styles";
+@import "../uikit/toplogo/styles";
+@import "../uikit/input/styles";
+@import "../components/startspage/styles";
+// @import "../components/support-header/styles";

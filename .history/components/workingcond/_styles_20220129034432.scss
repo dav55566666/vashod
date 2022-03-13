@@ -1,0 +1,80 @@
+.workingcond{
+    width: 100%;
+    padding: 0;
+    p{
+        margin: 0;
+    }
+    form{
+        width: 100%;
+        .workingcond_box{
+            width: 100%;
+            margin-top: 64px;
+            .workingcond_box_item{
+                width: 100%;
+                height: 144px;
+                padding: 0 32px;
+                background: #FFFFFF;
+                box-shadow: 10px 0px 50px 10px rgba(0, 0, 0, 0.05);
+                border-radius: 20px;
+                margin-bottom: 30px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .time_left{
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    img{
+                        margin-right: 30px;
+                    }
+                    .time_text{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        p{
+                            margin-right: 30px;
+                            font-family: Lato;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #000000;
+                        }
+                        .time_text_js{
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            p{
+                                margin-right: 24px;
+                                font-family: Lato;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 30px;
+                                line-height: 36px;
+                                color: #000000;
+                            }
+                            span{
+                                font-family: Lato;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 30px;
+                                line-height: 36px;
+                                margin-right: 5px;
+                                color: #F5C257;
+                            }
+                            #opendat{
+                                font-family: Lato;
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 30px;
+                                line-height: 36px;
+                                margin: 0;
+                                color: rgba(43, 51, 79, 0.2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

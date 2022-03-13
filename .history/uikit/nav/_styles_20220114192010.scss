@@ -1,0 +1,49 @@
+.nav-menu{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  .openmenubtn{
+    padding: 42px 30px;
+    width: 228px;
+    button{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-family: Lato;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      color: #747A8F;
+      svg{
+        margin-right: 13px;
+        path{
+          transition: all 0.5s;
+        }
+      }
+    }
+  }
+  .menu{
+    ul{
+      li{
+        a{
+          svg{
+            path{
+
+            }
+          }
+        }
+      }
+    }
+  }
+  .exitbtn{
+    button{
+      svg{
+        path{
+
+        }
+      }
+    }
+  }
+}

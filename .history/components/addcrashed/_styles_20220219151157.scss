@@ -1,0 +1,289 @@
+.swiper-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.swiper-container{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.addcrashpage{
+    width: 100%;
+    display: block;
+}
+.addcrash{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .addcrash_left{
+        width: 48%;
+        height: 640px;
+        padding: 6px;
+        padding-left: 10px;
+        overflow: auto;
+        padding-right: 20px;
+        &::-webkit-scrollbar{
+            width: 8px;
+            background: #2B334F;
+            border-radius: 4px;
+        }
+        &::-webkit-scrollbar-thumb{
+            background: #F5C257;
+            border-radius: 4px;
+        }
+        .addcrash_left_box{
+            height: max-content;
+            width: 100%;
+            .crashdetal{
+                width: 100%;
+                .crashedbtn {
+                    width: 100%;
+                    height: 70px;
+                    font-family: Lato;
+                    font-style: normal;
+                    margin-bottom: 25px;
+                    font-weight: normal;
+                    font-size: 22px;
+                    line-height: 26px;
+                    color: #000000;
+                    position: relative;
+                    z-index: 1;
+                    transition: all 0.5s;
+                    background: #FFFFFF;
+                    box-shadow: 0px 4px 0px #BBC7DD, inset 0px 4px 0px rgba(255, 255, 255, 0.25);
+                    border-radius: 10px;
+                    &::before{
+                        width: 37px;
+                        content: "";
+                        background: #2B334F;
+                        border-radius: 10px;
+                        position: absolute;
+                        transition: all 0.5s;
+                        z-index: -1;
+                        left: 0px;
+                        opacity: 0;
+                        top: 0;
+                        height: 100%;
+                    }
+                    &::after{
+                        width: 37px;
+                        content: "";
+                        background: #fff;
+                        border-radius: 10px;
+                        position: absolute;
+                        z-index: 1;
+                        left: 10px;
+                        top: 0;
+                        height: 100%;
+                    }
+                }
+                .crash{
+                    &::before{
+                        opacity: 1;
+                    }
+                }
+                .nocrash{
+                    &::before{
+                        display: none;
+                    }
+                }
+                .active{
+                    background: #F5C257;
+                    box-shadow: 0px 4px 0px #BF9C51, inset 0px 4px 0px rgba(255, 255, 255, 0.25);
+                    border-radius: 10px;
+                    color: #FFFFFF;
+                    &::after{
+                        background: #F5C257;
+                    }
+                    &::before{
+                        opacity: 1;
+                    }
+                }
+            }
+            .addnewcrashdetal{
+                width: 100%;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #2B334F;
+                box-shadow: 0px 4px 0px #BBC7DD, inset 0px 4px 0px rgba(255, 255, 255, 0.25);
+                border-radius: 10px;
+                font-family: Lato;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 26px;
+                color: #FFFFFF;                
+                svg{
+                    margin-left: 9px;
+                }
+            }
+        }
+    }
+    .addcrash_right{
+        width: 48%;
+        margin-top: 6px;
+        display: none;
+        .swiper-container{
+            max-width: 339px;
+            margin: 0 auto;
+        }
+        .savebtn{
+            font-family: Lato;
+            font-style: normal;
+            border: unset;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            width: 100%;
+            height: 80px;
+            margin-top: 30px;
+            background: #F5C257;
+            box-shadow: 0px 4px 0px #BF9C51, inset 0px 4px 0px rgba(255, 255, 255, 0.25);
+            border-radius: 10px;
+        }
+        .addcrash_right_box{
+            width: 100%;
+            padding: 20px 30px;
+            background: #FFFFFF;
+            box-shadow: 10px 0px 50px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 20px;
+        }
+        .addcrash_right_title{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 22px;
+            h4{
+                font-family: Lato;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 24px;
+                color: #000000;                
+            }
+            .addcrash_right_title_btn{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                button{
+                    &:first-child{
+                        background-image: url("/icon/penicon.svg");
+                        width: 20px;
+                        height: 20px;
+                        background-size: cover;
+                    }
+                    &:last-child{
+                        margin-left: 26px;
+                    }
+                }
+            }
+        }
+        .crashedinfo{
+            border: 1px solid #C4C4C4;
+            box-sizing: border-box;
+            border-radius: 10px;
+            width: 100%;
+            margin-bottom: 30px;
+            height: 340px;
+            padding: 10px 16px;
+            p{
+                font-family: Lato;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 16px;
+                color: #000000;
+            }
+        }
+        .crashedimg{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            max-width: 500px;
+            align-items: center;
+            margin: 0 auto;
+            overflow: hidden;
+            .activimg{
+                width: 100%;
+                position: fixed;
+                z-index: 5554545;
+                background: rgba(43, 51, 79, 0.86);
+                left: 0;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                .clouscrashimg{
+                    position: absolute;
+                    z-index: 5;
+                    left: 75%;
+                    display: block;
+                    top: 18%;
+                    transform: translateX(-20%);
+                }
+                .delateimg{
+                    position: absolute;
+                    z-index: 5;
+                    left: 50%;
+                    display: block;
+                    top: 18%;
+                    transform: translateX(-50%);
+                }
+                .crashimg{
+                    max-width: 800px;
+                    border: unset;
+                    border-radius: 20px;
+                    width: 100%;
+                    height: 500px;
+                    margin: 0;
+                    object-fit: cover;
+                }
+            }
+            .clouscrashimg,.delateimg{
+                display: none;
+            }
+            .crashimg{
+                width: 60px;
+                height: 60px;
+                min-width: 60px;
+                min-height: 60px;
+                border: 1px solid #C4C4C4;
+                box-sizing: border-box;
+                border-radius: 6px;
+                margin-right: 30px;
+            }
+            label{
+                display: block;
+                max-width: 60px;
+                height: 60px;
+                width: 100%;
+                position: relative;
+                cursor: pointer;
+                input{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    cursor: pointer;
+                    left: 0;
+                    top: 0;
+                    z-index: 2;
+                    opacity: 0;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

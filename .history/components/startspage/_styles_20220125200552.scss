@@ -1,0 +1,272 @@
+.ant-select-dropdown{
+  z-index: 9999!important;
+  background-color: unset!important;
+  padding-right: 7px;
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled){
+    background: rgba(71, 84, 131, 0.73);
+    border-radius: 0px 0px 10px 10px;
+  }
+  .rc-virtual-list-holder-inner{
+    background: rgba(71, 84, 131, 0.73);
+    border-radius: 0px 0px 10px 10px;
+  }
+  .ant-select-item-option-content{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .ant-select-item {
+    padding: 13px 30px;
+    .selectedchek{
+      width: 20px;
+      height: 20px;
+      display: block;
+      margin-right: 20px;
+      border-radius: 50%;
+      background: #FFFFFF;
+      border: 1px solid #D7D7D7;
+      box-sizing: border-box;
+    }
+  }
+  .ant-select-item-option-active{
+    background: #F5C257!important;
+
+  }
+}
+.startpage{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  .bgimage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .startpage_logined{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: url("/img/Group 1411.png");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 102px;
+    .startpage_logined_cont{
+      position: absolute;
+      padding: 191px 30px 30px;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      transition: all 0.5s;
+      opacity: 0;
+      left: 0;
+      z-index: -5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(43, 51, 79, 0.41);
+      backdrop-filter: blur(65px);
+      border-radius: 0px;
+      flex-direction: column;
+      .startpage_logined_cont_top{
+        width: 100%;
+        text-align: center;
+        p{
+          font-family: Lato;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 24px;
+          text-align: center;
+          margin-bottom: 48px;
+          color: #FFFFFF;
+        }
+        .ant-select{
+          width: 100%!important;
+          max-width: 361px;
+          margin: 0 auto;
+          text-align: left;
+        }
+        .ant-select .ant-select-selector{
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #9C9C9C;
+          border: 1px solid #FFFFFF;
+          box-sizing: border-box;
+          border-radius: 12px;
+        }
+        .ant-select-selection-item{
+          font-family: Lato;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 22px;
+          color: #FFFFFF;
+        }
+        .ant-select-arrow{
+          background: url("/icon/arrowdown.svg");
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          span{
+            display: none;
+          }
+        }
+      }
+      .startpage_logined_cont_bottom{
+        width: 100%;
+        padding: 0 30px;
+        .selectedcar{
+          display: none;
+          h4{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 55px;
+            text-align: center;
+            color: #FFFFFF;            
+          }
+          p{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 8px;
+            text-align: center;
+            color: #FFFFFF;
+          }
+        }
+        .buttonnext{
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-content: inherit;
+        }
+      }
+    }
+  }
+}
+.startpagedriver{
+  .startpage_logined{
+    background-image: url("/img/driverbg.png");
+    .startpage_logined_cont{
+      position: absolute;
+      padding: 191px 30px 30px;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      transition: all 0.5s;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(43, 51, 79, 0.41);
+      backdrop-filter: blur(65px);
+      border-radius: 0px;
+      flex-direction: column;
+      z-index: 555;
+      opacity: 1;
+      .startpage_logined_cont_top{
+        width: 100%;
+        text-align: center;
+        p{
+          font-family: Lato;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 24px;
+          text-align: center;
+          margin-bottom: 48px;
+          color: #FFFFFF;
+        }
+        .ant-select{
+          width: 100%!important;
+          max-width: 361px;
+          margin: 0 auto;
+          text-align: left;
+        }
+        .ant-select .ant-select-selector{
+          height: 50px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          background: #9C9C9C;
+          border: 1px solid #FFFFFF;
+          box-sizing: border-box;
+          border-radius: 12px;
+        }
+        .ant-select-selection-item{
+          font-family: Lato;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 22px;
+          color: #FFFFFF;
+        }
+        .ant-select-arrow{
+          background: url("/icon/arrowdown.svg");
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          span{
+            display: none;
+          }
+        }
+      }
+      .startpage_logined_cont_bottom{
+        width: 100%;
+        padding: 0 30px;
+        .selectedcar{
+          display: none;
+          h4{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 55px;
+            text-align: center;
+            color: #FFFFFF;            
+          }
+          p{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 8px;
+            text-align: center;
+            color: #FFFFFF;
+          }
+        }
+        .buttonnext{
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-content: inherit;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.toplogo{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    max-height: 296px;
+    width: 100%;
+    z-index: 55;
+    a{
+        width: 100%;
+        display: block;
+        img{
+            width: 100%;
+        }
+    }
+}

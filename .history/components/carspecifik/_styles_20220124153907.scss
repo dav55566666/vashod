@@ -1,0 +1,24 @@
+.carspecifik{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .carspecifik_left{
+        width: 100%;
+        margin-right: 30px;
+    }
+    .carspecifik_right{
+        width: 246px;
+        padding: 48px 20px 37px;
+        background: #FFFFFF;
+        box-shadow: 10px 0px 50px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        position: relative;
+        .topimg{
+            position: absolute;
+            top: -24px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

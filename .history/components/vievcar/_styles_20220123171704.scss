@@ -1,0 +1,18 @@
+.carviewslider{
+    margin-top: 24px;
+    .carviewslider_top{
+        .mySwiper{
+            width: 100%;
+        }
+    }
+    .carviewslider_buttons{
+        button{
+            &:first-child{
+
+            }
+            &:last-child{
+
+            }
+        }
+    }
+}

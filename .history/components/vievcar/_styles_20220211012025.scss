@@ -1,0 +1,140 @@
+.iscrashedcrash{
+    display: block!important;
+}
+.isnotcrash{
+    display: none!important;
+}
+.isnotcrash[data-name="blue"]{
+    display: block!important;
+}
+.iscrashedcrash[data-name="blue"]{
+    display: none!important;
+}
+.carvievpage{
+    display: none;
+    width: 100%;
+}
+.carviewslider{
+    margin-top: 24px;
+    .carviewslider_top{
+        width: 100%;
+        margin-bottom: 30px;
+        background: #FFFFFF;
+        box-shadow: 10px 0px 50px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        .mySwiper{
+            width: 100%;
+            padding-bottom: 96px;
+            .swiper-wrapper{
+                background: #2B334F;
+                border-radius: 20px;
+            }
+            .swiper-slide{
+                position: relative;
+                text-align: center;
+                button{
+                    padding: 22px 0 26px;
+                    width: 100%;
+                    border-radius: 20px;
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 22px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+                span{
+                    position: absolute;
+                    width: 100%;
+                    text-align: center;
+                    padding-top: 13px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    &::before{
+                        content: "";
+                        position: relative;
+                        width: 8px;
+                        height: 8px;
+                        margin-right: 9px;
+                        background: #2B334F;
+                        border-radius: 50%;
+                    }
+                }
+                span[data-name="crashed"]{
+                    &::before{
+                        background: #F5C257;
+                    }
+                }
+            }
+            .swiper-slide-thumb-active{
+                button{
+                    background: #F5C257;
+                    box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.07);
+                    border-radius: 20px;
+                }
+            }
+        }
+        .mySwiper2{
+            width: 100%;
+            padding: 0 16px 98px;
+            .swiper-slide{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .swiper-button-prev, .swiper-button-next{
+                left: 30px;
+                right: auto;
+                top: 32%;
+                &::after{
+                    display: none;
+                }
+                background-image: url("/icon/swiperprev.svg");
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-size: cover;
+            }
+            .swiper-button-next{
+                left: unset;
+                right: 30px;
+                background-image: url("/icon/swipernext.svg");
+            }
+        }
+    }
+    .carviewslider_buttons{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button,a{
+            max-width: 416px;
+            width: 100%;
+            height: 80px;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            &:first-child{
+                background: #F5C257;
+                box-shadow: 0px 4px 0px #BF9C51, inset 0px 4px 0px rgba(255, 255, 255, 0.25);
+                border-radius: 10px;
+            }
+            &:last-child{
+                background: #2B334F;
+                box-shadow: 0px 4px 0px #131724, inset 0px 4px 0px rgba(255, 255, 255, 0.25);
+                border-radius: 10px;
+            }
+        }
+    }
+}

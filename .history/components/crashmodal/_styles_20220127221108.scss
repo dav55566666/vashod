@@ -1,0 +1,34 @@
+.addcrashmodal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 55555;
+    left: 0;
+    top: 0;
+    background: rgba(43, 51, 79, 0.86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .addcrashmodal_cont{
+        padding: 30px;
+        background: #FFFFFF;
+        box-shadow: 10px 0px 50px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        .clousmodal{
+            position: absolute;
+            right: -44px;
+            top: -16px;
+        }
+        form{
+            h4{
+
+            }
+
+        }
+    }
+}

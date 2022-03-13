@@ -1,0 +1,20 @@
+.buttonlink{
+  background: #F5C257;
+  border-radius: 10px;
+  max-width: 185px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  svg,img{
+    margin-left: 8px;
+  }
+}

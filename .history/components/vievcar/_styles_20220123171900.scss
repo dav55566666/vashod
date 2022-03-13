@@ -1,0 +1,23 @@
+.carviewslider{
+    margin-top: 24px;
+    .carviewslider_top{
+        width: 100%;
+        margin-bottom: 30px;
+        background: #FFFFFF;
+        box-shadow: 10px 0px 50px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        .mySwiper{
+            width: 100%;
+        }
+    }
+    .carviewslider_buttons{
+        button{
+            &:first-child{
+
+            }
+            &:last-child{
+
+            }
+        }
+    }
+}

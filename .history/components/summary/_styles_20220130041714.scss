@@ -1,0 +1,24 @@
+.summarytitlep{
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 9px;
+  margin-bottom: 0;
+  color: #000000;
+}
+.summary_page{
+  height: 100vh;
+  overflow: auto;
+  padding-right: 46px;
+  &::-webkit-scrollbar{
+    width: 8px;
+    background: #2B334F;
+    border-radius: 4px;
+}
+&::-webkit-scrollbar-thumb{
+    background: #F5C257;
+    border-radius: 4px;
+}
+}

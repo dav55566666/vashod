@@ -1,0 +1,427 @@
+.ant-select-dropdown .ant-select-item-option-content{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    white-space: pre-wrap;
+    color: #FFFFFF;
+}
+.ant-select-dropdown .ant-select-item {
+    padding: 13px 8px;
+    img{
+        margin-right: 6px;
+    }
+}
+p{
+    margin: 0;
+}
+#oilslide,#kmslide{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.carspecifik{
+    width: 100%;
+    display: block!important;
+    form{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .carspecifik_left{
+        width: 100%;
+        margin-right: 30px;
+        .oil{
+            width: 100%;
+            margin-bottom: 32px;
+            margin-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 25px;
+            background: #FFFFFF;
+            box-shadow: 10px 0px 50px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 20px;
+            .oil_left{
+                max-width: 70px;
+                width: 100%;
+                img{
+                    width: 33px;
+                }
+                p{
+                    margin-bottom: 20px;
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #000000;
+                }
+            }
+            .oilcentral{
+                max-width: 335px;
+                width: 100%;
+                .oilcentral_flex{
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    label{
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        position: relative;
+                        width: max-content;
+                        &:first-child{
+                            margin-right: 44px;
+                        }
+                        input{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            cursor: pointer;
+                            z-index: 2;
+                            opacity: 0;
+                        }
+                        span{
+                            margin: 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 20px;
+                            height: 20px;
+                            background: #FFFFFF;
+                            border: 1px solid #D7D7D7;
+                            box-sizing: border-box;
+                            margin-right: 10px;
+                            position: relative;
+                            border-radius: 50%;
+                            &::before{
+                                content: "";
+                                position: relative;
+                                background: #F5C257;
+                                width: 7px;
+                                height: 7px;
+                                border-radius: 50%;
+                                opacity: 0;
+                            }
+                        }
+                        p{
+                            font-family: Lato;
+                            font-style: normal;
+                            font-weight: normal;
+                            margin: 0;
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #000000;
+                        }
+                        input:checked ~ span{
+                            &::before{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                .oilcentral_range{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    p{
+                        font-family: Lato;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #000000;
+                    }
+                    .ant-slider{
+                        width: 100%;
+                        .ant-slider-rail{
+                            height: 12px;
+                            background: #EBEBEB;
+                            box-shadow: inset 0px 1px 1px rgba(40, 67, 83, 0.2);
+                            border-radius: 6px;
+                        }
+                        .ant-slider-track{
+                            height: 12px;
+                            background: #F5C257;
+                            border-radius: 6px;
+                        }
+                        .ant-slider-handle{
+                            background: #F5C257;
+                            border: 5px solid #FFFFFF;
+                            box-sizing: border-box;
+                            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.15);
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+            }
+            .oil_right{
+                max-width: 91px;
+                width: 100%;
+                text-align: center;
+                p{
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 22px;
+                    line-height: 26px;
+                    margin: 0;
+                    color: #000000;
+                }
+                span{
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 38px;
+                    line-height: 46px;
+                    color: #000000;
+                }
+            }
+        }
+        .carspecifik_left_selects{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+            margin-bottom: 30px;
+            .carspecifik_left_selects_item{
+                padding: 34px 20px 20px;
+                background: #FFFFFF;
+                box-shadow: 10px 0px 50px 10px rgba(0, 0, 0, 0.05);
+                border-radius: 20px;
+                position: relative;
+                .ant-select{
+                    width: 100%!important;
+                    max-width: 361px;
+                    margin: 0 auto;
+                    text-align: left;
+                }
+                .ant-select .ant-select-selector{
+                    height: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: #2B334F;
+                    border-radius: 12px;
+                    border: unset;
+                    box-sizing: border-box;
+                    border-radius: 12px;
+                }
+                .ant-select-selection-item{
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #FFFFFF;
+                    img{
+                        margin-right: 6px;
+                    }
+                }
+                .ant-select-arrow{
+                    background: url("/icon/arrowdown.svg");
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    span{
+                        display: none;
+                    }
+                }
+                input{
+                    width: 100%;
+                    height: 50px;
+                    border: 1px solid #C4C4C4;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                    padding: 0 16px;
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #000000;
+                }
+                p{
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-bottom: 27px;
+                    text-align: center;
+                    color: #000000;
+                }
+                img{
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: -25px;
+                }
+            }
+        }
+        .dopzamech{
+            width: 100%;
+            margin-bottom: 30px;
+            padding: 14px 20px 22px;
+            background: #FFFFFF;
+            box-shadow: 10px 0px 50px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 20px;
+            textarea{
+                padding: 16px 10px;
+                width: 100%;
+                height: 70px;
+                border: 1px solid #C4C4C4;
+                box-sizing: border-box;
+                border-radius: 10px;
+                font-family: Lato;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+                resize: none;
+                outline: none;
+                color: #000000;
+            }
+            p{
+                font-family: Lato;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 16px;
+                color: #000000;                
+            }
+        }
+        .buttonlink{
+            max-width: unset;
+            width: 100%;
+            height: 80px;
+        }
+    }
+    .carspecifik_right{
+        min-width: 246px;
+        max-width: 246px;
+        padding: 48px 20px 37px;
+        background: #FFFFFF;
+        box-shadow: 10px 0px 50px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        position: relative;
+        .topimg{
+            position: absolute;
+            top: -24px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .carspecifik_right_item{
+            width: 100%;
+            &:last-child{
+                margin-top: 26px;
+            }
+            .title{
+                text-align: center;
+                width: 100%;
+                img{
+                    display: block;
+                    margin: 0 auto ;
+                }
+                p{
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 22px;
+                    text-align: center;
+                    color: #000000;
+                }
+            }
+            .ant-select{
+                width: 100%!important;
+                max-width: 361px;
+                margin: 0 auto;
+                text-align: left;
+            }
+            .ant-select .ant-select-selector{
+                height: 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background: #9C9C9C;
+                border: 1px solid #FFFFFF;
+                box-sizing: border-box;
+                border-radius: 12px;
+            }
+            .ant-select-selection-item{
+                font-family: Lato;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+                img{
+                    margin-right: 6px;
+                }
+            }
+            .ant-select-arrow{
+                background: url("/icon/arrowdown.svg");
+                position: absolute;
+                width: 16px;
+                height: 16px;
+                span{
+                    display: none;
+                }
+            }
+            .selectedcar{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 11px 0 21px;
+                img{
+                    margin-right: 6px;
+                }
+                p{
+                    font-family: Lato;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 19px;
+                    max-width: 140px;
+                    margin: 0;
+                    color: #9EABD8;
+                }
+            }
+            label{
+                display: block;
+                margin-bottom: 20px;
+                font-family: Lato;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                text-align: center;
+                color: #000000;
+            }
+            input{
+                width: 100%;
+                height: 50px;
+                border: 1px solid #C4C4C4;
+                box-sizing: border-box;
+                border-radius: 10px;
+                padding: 0 16px;
+                font-family: Lato;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+                color: #000000;
+            }
+        }
+    }
+}
